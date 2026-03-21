@@ -1,4 +1,4 @@
-# AI Resume Analyzer 🚀
+# AI Resume Analyzer 
 
 ## Features
 - Resume parsing (PDF/DOCX)
