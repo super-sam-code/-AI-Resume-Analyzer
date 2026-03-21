@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AI Resume Analyzer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
+
+<div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-xl">
+
+<h1 class="text-3xl font-bold text-center mb-6 text-gray-800">
+AI Resume Analyzer 🚀
+</h1>
+
+<!-- Upload -->
+<div class="mb-4">
+<label class="block text-gray-600 mb-2">Upload Resume</label>
+<input type="file" id="resume" class="w-full p-2 border rounded-lg">
+</div>
+
+<!-- Job Description -->
+<div class="mb-4">
+<label class="block text-gray-600 mb-2">Job Description</label>
+<textarea id="jobdesc"
+class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-purple-400"
+placeholder="Paste job description here..."></textarea>
+</div>
+
+<!-- Button -->
+<button onclick="analyze()" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded-lg transition duration-300">Analyze Resume</button>
+<!-- Loading -->
+<p id="loading" class="text-center text-gray-500 mt-3 hidden">
+Analyzing...
+</p>
+
+<!-- Result -->
+<div id="result"
+class="mt-6 bg-gray-100 p-4 rounded-lg text-sm text-gray-800 whitespace-pre-wrap">
+Results will appear here...
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
